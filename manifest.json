@@ -1,0 +1,30 @@
+{
+    "name": "Stik Wid It",
+    "version": "0.0.1",
+    "description": "Motivational quotes to inspire, up-lift and encourage you everyday!",
+    "permissions": ["storage", "declarativeContent", "activeTab"],
+    "options_page": "options.html",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      },
+      "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/swi_s_16.png",
+            "32": "images/swi_s_32.png",
+            "48": "images/swi_s_48.png",
+            "128": "images/swi_s_128.png"
+          }
+      },
+      "icons": {
+        "16": "images/swi_s_16.png",
+        "32": "images/swi_s_32.png",
+        "48": "images/swi_s_48.png",
+        "128": "images/swi_s_128.png"
+      },
+      "chrome_url_overrides" : {
+        "newtab": "swi_emi_tab.html"
+      },
+      "manifest_version": 2
+  }
