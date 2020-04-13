@@ -9,7 +9,8 @@ chrome.runtime.onInstalled.addListener(function() {
   chrome.storage.sync.set({quote: "The people who are crazy enough to think they can change the world are the ones who do"}, function() {
   });
 
-  chrome.storage.sync.set({quote: "Steve Jobs"});
+  chrome.storage.sync.set({quote: "Steve Jobs"}, function() {
+  });
 
   // chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
   //   chrome.declarativeContent.onPageChanged.addRules([{

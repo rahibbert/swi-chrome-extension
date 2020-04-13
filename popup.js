@@ -2,7 +2,7 @@
 
 'use strict';
 
-const popupQuote = document.getElementById('popup-quote');
+let popupQuote = document.getElementById('popup-quote');
 chrome.storage.sync.get('quote', function(data) {
   popupQuote.innerHTML = data.quote;
 });
