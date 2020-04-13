@@ -4,8 +4,14 @@
 
 chrome.runtime.onInstalled.addListener(function() {
   chrome.storage.sync.set({totalLandscapePhotos: 64726}, function() {
-    console.log("The color is green.");
   });
+
+  chrome.storage.sync.set({quote: "The people who are crazy enough to think they can change the world are the ones who do"}, function() {
+  });
+
+  chrome.storage.sync.set({quote: "Steve Jobs"}, function() {
+  });
+
   // chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
   //   chrome.declarativeContent.onPageChanged.addRules([{
   //     conditions: [new chrome.declarativeContent.PageStateMatcher({
@@ -16,5 +22,3 @@ chrome.runtime.onInstalled.addListener(function() {
   //   }]);
   // });
 });
-
-chrome.
