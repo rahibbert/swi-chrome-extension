@@ -1,0 +1,22 @@
+{
+  "name": "stik-wid-it",
+  "version": "0.0.1",
+  "description": "Chrome extension to serve inspirational messages",
+  "main": "background.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahibbert/swi-chrome-extension.git"
+  },
+  "author": "Ryan Hibbert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahibbert/swi-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/rahibbert/swi-chrome-extension#readme",
+  "dependencies": {
+    "fetch": "^1.1.0"
+  }
+}
