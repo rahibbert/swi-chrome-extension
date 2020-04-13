@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rahibbert/swi-chrome-extension/issues"
   },
-  "homepage": "https://github.com/rahibbert/swi-chrome-extension#readme"
+  "homepage": "https://github.com/rahibbert/swi-chrome-extension#readme",
+  "dependencies": {
+    "fetch": "^1.1.0"
+  }
 }
