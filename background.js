@@ -3,13 +3,13 @@
 'use strict';
 
 chrome.runtime.onInstalled.addListener(function() {
-  chrome.storage.sync.set({totalLandscapePhotos: 64726}, function() {
+  chrome.storage.sync.set({'totalLandscapePhotos': 64726}, function() {
   });
 
-  chrome.storage.sync.set({quote: "The people who are crazy enough to think they can change the world are the ones who do"}, function() {
+  chrome.storage.sync.set({'quote': "The people who are crazy enough to think they can change the world are the ones who do"}, function() {
   });
 
-  chrome.storage.sync.set({quote: "Steve Jobs"}, function() {
+  chrome.storage.sync.set({'author': "Steve Jobs"}, function() {
   });
 
   // chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
