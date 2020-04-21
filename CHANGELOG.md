@@ -1,3 +1,7 @@
+# 2020-04-21 [0.0.4](https://github.com/rahibbert/swi-chrome-extension/pull/8)
+
+Feature: add clock functionality to the new tab layout
+
 # 2020-04-21 [0.0.3](https://github.com/rahibbert/swi-chrome-extension/pull/7)
 
 - Bug Fix: enable retrieval from chrome storage

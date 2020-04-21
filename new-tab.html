@@ -38,6 +38,12 @@
             height: 400px;
             width: 283px;
         }
+        .clock {
+            color: #fff;
+            font-size: 20px;
+            font-family: Orbitron;
+            letter-spacing: 7px;
+        }
         </style>
 </head>
 <body>
@@ -62,7 +68,7 @@
             <a class="float-left" target="_blank" href="https://stikwidit.com"><img src="images/swi_male_model.png"/></a>
             </div>
             <div class="col-sm">
-            <div>8:34 AM</div>
+            <div class="clock" id="clock" onload="showTime()"></div>
             <div>6 Berlin</div>
             <div>Social Media</div>
             <div id="social-media">
@@ -82,5 +88,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/init.js"></script>
+    <script src="js/modules/clock.js"></script>
 </body>
 </html>

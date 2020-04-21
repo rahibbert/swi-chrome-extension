@@ -16,4 +16,3 @@ const user = document.getElementById('user-greeting');
 chrome.storage.sync.get(['user-name'], function(data) {
     user.innerHTML =  data.username ? `Hey ${data.username}` : "Hey You";
 });
-

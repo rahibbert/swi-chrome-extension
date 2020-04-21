@@ -23,7 +23,7 @@
         "128": "images/swi_s_128.png"
       },
       "chrome_url_overrides" : {
-        "newtab": "swi_emi_tab.html"
+        "newtab": "new-tab.html"
       },
       "manifest_version": 2
   }
