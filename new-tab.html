@@ -46,7 +46,7 @@
         }
         </style>
 </head>
-<body>
+<body onload="showTime()">
     <div id="top-navigation" class="sticky-top">
         <div class="float-left">
             <a target="_blank" href="https://stikwidit.com"><img src="images/swi_logo_50_128.png" /></a>
@@ -68,7 +68,8 @@
             <a class="float-left" target="_blank" href="https://stikwidit.com"><img src="images/swi_male_model.png"/></a>
             </div>
             <div class="col-sm">
-            <div class="clock" id="clock" onload="showTime()"></div>
+            <div id="time"></div>
+            <div id="date"></div>
             <div>6 Berlin</div>
             <div>Social Media</div>
             <div id="social-media">

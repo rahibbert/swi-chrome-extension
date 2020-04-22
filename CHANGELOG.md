@@ -1,3 +1,7 @@
+# 2020-04-22 [0.0.5](https://github.com/rahibbert/swi-chrome-extension/pull/9)
+
+Feature: add date functionality to the new tab layout
+
 # 2020-04-21 [0.0.4](https://github.com/rahibbert/swi-chrome-extension/pull/8)
 
 Feature: add clock functionality to the new tab layout

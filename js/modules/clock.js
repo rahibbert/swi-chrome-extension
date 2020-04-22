@@ -2,32 +2,22 @@
 
 const AM_SESSION = "AM";
 const PM_SESSION = "PM";
+const DEFAULT_LOCALE = "en";
+const TIME_FORMAT = {hour: 'numeric', minute: 'numeric'};
+const DATE_FORMAT = {weekday: 'short', year: 'numeric', month: 'short',  day: '2-digit' };
 
-function getTime() {
-    var date = new Date();
-    var h = date.getHours(); // 0 - 23
-    var m = date.getMinutes(); // 0 - 59
-    var session = AM_SESSION;
-    
-    if (h == 0) {
-        h = 12;
-    }
-    
-    if (h > 12) {
-        h = h - 12;
-        session = PM_SESSION;
-    }
-    
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-    
-    return `${h}:${m} ${session}`;
-     
+function getDateAndTime() {
+    const dateTime = new Date();
+    const time = new Intl.DateTimeFormat(DEFAULT_LOCALE, TIME_FORMAT).format(dateTime);
+    const date = new Intl.DateTimeFormat(DEFAULT_LOCALE, DATE_FORMAT).format(dateTime);
+
+    return {time, date};     
 }
 
 function showTime() {
-    let time = getTime();
-    document.getElementById("clock").innerText = time;
+    const dateTime = getDateAndTime();
+    document.getElementById("time").innerText = dateTime.time;
+    document.getElementById("date").innerText = dateTime.date;
     setTimeout(showTime, 1000);  
 }
 
