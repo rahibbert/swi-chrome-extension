@@ -14,7 +14,6 @@ function getDateAndTime() {
     return {time, date};     
 }
 
-
 function showTime() {
     const dateTime = getDateAndTime();
     document.getElementById("time").innerText = dateTime.time;
