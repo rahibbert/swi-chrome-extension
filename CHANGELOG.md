@@ -1,3 +1,7 @@
+# 2020-04-24 [0.0.6](https://github.com/rahibbert/swi-chrome-extension/pull/10)
+
+Feature: Removed unnecessary elements from the New Tab
+
 # 2020-04-22 [0.0.5](https://github.com/rahibbert/swi-chrome-extension/pull/9)
 
 Feature: add date functionality to the new tab layout
