@@ -4,7 +4,7 @@
 const BASE_WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather";
 const API_ID = "01f8a5882330339423a70510ed60946a";
 const LOCATION_OPTIONS = {enableHighAccuracy: true, timeout: 60000, maximumAge: 0};
-const UNITS_SYMBOL = {metric: '°C', imperial: '°F'};
+const UNITS_SYMBOL = {metric: '&#8451;', imperial: '°&#8457;'};
 let units = 'metric';
 
 if (navigator.geolocation) {
@@ -29,7 +29,7 @@ const success = async pos => {
     const openWeather = await getWeatherStatus(pos.coords.latitude, pos.coords.longitude, units);
     console.log(openWeather)
     if (openWeather && openWeather.main) {
-        document.getElementById("weather").innerText = `${Math.trunc(openWeather.main.temp)}${UNITS_SYMBOL[units]} ${openWeather.name}`;
+        document.getElementById("weather").innerHTML = `${Math.trunc(openWeather.main.temp)}${UNITS_SYMBOL[units]} ${openWeather.name}`;
     } else {
         console.log("something went wrong")
     }
