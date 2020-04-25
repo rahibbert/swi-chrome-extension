@@ -1,3 +1,7 @@
+# 2020-04-26 [0.0.7](https://github.com/rahibbert/swi-chrome-extension/pull/10)
+
+Feature: Added weather information to chrome new tab
+
 # 2020-04-24 [0.0.6](https://github.com/rahibbert/swi-chrome-extension/pull/10)
 
 Feature: Removed unnecessary elements from the New Tab

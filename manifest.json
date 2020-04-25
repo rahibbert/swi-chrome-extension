@@ -2,7 +2,7 @@
     "name": "Stik Wid It",
     "version": "0.0.1",
     "description": "Motivational quotes to inspire, up-lift and encourage you everyday!",
-    "permissions": ["storage", "declarativeContent", "activeTab", "webRequest", "https://*.amazonaws.com/"], 
+    "permissions": ["storage", "declarativeContent", "geolocation", "activeTab", "webRequest", "https://*.amazonaws.com/"], 
     "background": {
         "scripts": ["background.js"],
         "persistent": true
