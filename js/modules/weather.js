@@ -1,6 +1,5 @@
 // Copyright 2020 Stik Wid It Authors. All rights reserved.
 
-
 const BASE_WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather";
 const API_ID = "01f8a5882330339423a70510ed60946a";
 const LOCATION_OPTIONS = {enableHighAccuracy: true, timeout: 60000, maximumAge: 0};
@@ -36,5 +35,3 @@ const success = async pos => {
 }
   
 const error = err => console.warn(`ERROR(${err.code}): ${err.message}`);
-
-
