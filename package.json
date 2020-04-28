@@ -1,6 +1,6 @@
 {
   "name": "stik-wid-it",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Chrome extension to serve inspirational messages",
   "main": "background.js",
   "scripts": {

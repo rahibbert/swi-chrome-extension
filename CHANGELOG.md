@@ -1,3 +1,7 @@
+# 2020-04-28 [0.0.7](https://github.com/rahibbert/swi-chrome-extension/pull/12)
+
+chore: Removed unnecessary files and code
+
 # 2020-04-26 [0.0.7](https://github.com/rahibbert/swi-chrome-extension/pull/10)
 
 Feature: Added weather information to chrome new tab
