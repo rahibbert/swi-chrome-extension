@@ -12,15 +12,4 @@ chrome.runtime.onInstalled.addListener(function() {
   chrome.storage.sync.set({'locale': chrome.i18n.getUILanguage()});
 
   chrome.storage.sync.set({'temperatureUnit': 'metric'});
-
-  
-  // chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
-  //   chrome.declarativeContent.onPageChanged.addRules([{
-  //     conditions: [new chrome.declarativeContent.PageStateMatcher({
-  //       pageUrl: {hostEquals: 'developer.chrome.com'},
-  //     })
-  //     ],
-  //         actions: [new chrome.declarativeContent.ShowPageAction()]
-  //   }]);
-  // });
 });
