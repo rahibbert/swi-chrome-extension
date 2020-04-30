@@ -12,4 +12,8 @@ chrome.runtime.onInstalled.addListener(function() {
   chrome.storage.sync.set({'locale': chrome.i18n.getUILanguage()});
 
   chrome.storage.sync.set({'temperatureUnit': 'metric'});
+
+  const currentDate = new Date();
+  currentDate.setHours(0,0,0);
+  chrome.storage.sync.set({'lastUpdate': currentDate.getTime()});
 });
