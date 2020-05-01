@@ -26,7 +26,6 @@ const getWeatherStatus = async (latitude, longitude, units) => {
 
 const success = async pos => {
     const openWeather = await getWeatherStatus(pos.coords.latitude, pos.coords.longitude, units);
-    console.log(openWeather)
     if (openWeather && openWeather.main) {
         document.getElementById("weather").innerHTML = `${Math.trunc(openWeather.main.temp)}${UNITS_SYMBOL[units]} ${openWeather.name}`;
     } else {
