@@ -25,9 +25,6 @@ chrome.storage.sync.get(['lastUpdate'], function(data) {
         currentDate.setHours(0,0,0);
         chrome.storage.sync.set({'lastUpdate': currentDate.getTime()});
     }
-
-
-    
 });
 
 const getRandomLandscapePhoto =  async()  => {

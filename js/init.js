@@ -13,6 +13,11 @@ chrome.storage.sync.get(['author'], function(data) {
 });
 
 const user = document.getElementById('user-greeting');
-chrome.storage.sync.get(['user-name'], function(data) {
+chrome.storage.sync.get(['userName'], function(data) {
     user.innerHTML =  data.username ? `Hey ${data.username}` : "Hey You";
+});
+
+const body = document.getElementsByTagName("BODY")[0];
+chrome.storage.sync.get(['backgroundImage'], function(data) {
+    body.style.backgroundImage = `url(${data.backgroundImage})`;
 });

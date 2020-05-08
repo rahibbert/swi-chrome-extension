@@ -13,6 +13,8 @@ chrome.runtime.onInstalled.addListener(function() {
 
   chrome.storage.sync.set({'temperatureUnit': 'metric'});
 
+  chrome.storage.sync.set({'backgroundImage': 'images/swi_quote_bg.jpg'});
+
   const currentDate = new Date();
   currentDate.setHours(0,0,0);
   chrome.storage.sync.set({'lastUpdate': currentDate.getTime()});
