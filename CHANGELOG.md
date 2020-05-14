@@ -1,4 +1,4 @@
-# 2020-05-14 [0.0.7](https://github.com/rahibbert/swi-chrome-extension/pull/13)
+# 2020-05-14 [0.1.0](https://github.com/rahibbert/swi-chrome-extension/pull/13)
 
 Feature: Dynamically fetch photo on a daily basis
 
