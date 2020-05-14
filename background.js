@@ -12,4 +12,14 @@ chrome.runtime.onInstalled.addListener(function() {
   chrome.storage.sync.set({'locale': chrome.i18n.getUILanguage()});
 
   chrome.storage.sync.set({'temperatureUnit': 'metric'});
+
+  chrome.storage.sync.set({'backgroundImage': 'images/swi_quote_bg.jpg'});
+  
+  chrome.storage.sync.set({'backgroundImageAuthor': 'TODO: Add name here'});
+  
+  chrome.storage.sync.set({'backgroundImageReferenceUrl': 'TODO: Add url here'});
+
+  const currentDate = new Date();
+  currentDate.setHours(0,0,0);
+  chrome.storage.sync.set({'lastUpdate': currentDate.getTime()});
 });
